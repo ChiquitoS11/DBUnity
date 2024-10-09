@@ -7,6 +7,7 @@ const db = mysql.createConnection({
     user: process.env.DB_USER,
     password: process.env.DB_PASSWORD,
     database: process.env.DB_NAME,
+    // necesarios para la conexión a la base de datos de digitalOcean
     port: 25060,
     ssl: {
         rejectUnauthorized: false
