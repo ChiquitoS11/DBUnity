@@ -1,7 +1,7 @@
 // src/app.js
 const express = require('express');
 const bodyParser = require('body-parser');
-const authRoutes = require('./routes/authRoutes');
+const authRoutes = require('./src/routes/authRoutes');
 require('dotenv').config(); // Cargar variables de entorno
 
 const app = express();
