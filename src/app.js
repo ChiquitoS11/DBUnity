@@ -10,8 +10,12 @@ const PORT = process.env.PORT || 3000;
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
+// Servir archivos estáticos
+app.use(express.static('public'));
+
 // Rutas
 app.use('/api/auth', authRoutes);
+
 
 // Iniciar el servidor
 app.listen(PORT, () => {
